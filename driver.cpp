@@ -76,7 +76,7 @@ int main()
    cin >> num2; 
    for(int i = 0 ; i < num2 ; i ++)
    {
-       test.enqueue((i+4) *10);
+       test.enqueue(i * 1 );
    }
    if(num2 >  1)
    {
