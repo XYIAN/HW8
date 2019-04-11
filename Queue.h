@@ -1,5 +1,6 @@
 /* TITLE Queue.h
- * ABSTRACT: 
+ * ABSTRACT: this program contains the class content for queue.cpp 
+ * all added sorting functions are displayed 
  * Author: Kyle Dilbeck 
  * ID: 1996
  * Date: 4/9/19

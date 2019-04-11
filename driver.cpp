@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    Queue q1, q2 , q3;
+    Queue q1, q2 , q3, test;
 
     q2.enqueue(100);
     q2.enqueue(200);
@@ -66,7 +66,29 @@ int main()
    q3.descending(); 
    q3.display(); 
    
+   q3.ascending(); 
+   q3.display();
    
+   
+   
+   int num2; 
+   cout << "How many numbers would you like in final array?"; 
+   cin >> num2; 
+   for(int i = 0 ; i < num2 ; i ++)
+   {
+       test.enqueue((i+4) *10);
+   }
+   if(num2 >  1)
+   {
+       
+   test.descending(); 
+   test.display(); 
+   
+   test.ascending(); 
+   test.display();
+   }
+   else
+    cout << " too small " << endl << endl; 
    
     
     

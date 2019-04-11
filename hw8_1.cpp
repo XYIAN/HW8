@@ -1,5 +1,8 @@
 /* TITLE hw8_1.cpp
- * ABSTRACT: 
+ * ABSTRACT: this program will take an input txt file from the user 
+ * if the file contains size and intergers the program will then 
+ * be able to sort the intergers in either ascending or descending order 
+ * which BOTH MUST be followed with a display function to display properly
  * Author: Kyle Dilbeck 
  * ID: 1996
  * Date: 4/9/19
@@ -34,6 +37,8 @@ int main()
     cout << "Please enter file name with .txt : "; 
     cin >> input; 
     inFile.open(input);
+    cout << endl << "    Kyle's hw8_1--> "; 
+    
 
     // Test for errors.
     if (!inFile)
@@ -45,12 +50,13 @@ int main()
     inFile >> nums;
     // Read the numbers into the array.
     readNumbers(inFile, numbers, nums);
-    
+    /*
     cout << "===== First 10 Numbers from Input File =====\n";
     for (int i=0; i < nums; i++)
         cout << numbers[i] << " ";
     cout << endl << endl;
-
+    */
+    
     // Close the file.
     inFile.close();
     /*
@@ -61,13 +67,13 @@ int main()
     }
     */
     
-    cout << "Start the sorting..." << endl;
+    //cout << "Start the sorting..." << endl;
     
-    cout << endl; 
+    //cout << endl; 
     
     quick_sort(numbers, 0, nums-1);
     
-    
+    /*
     cout << "\n===== Sorted Numbers I =====\n";
     for (int i=0; i < nums; i++)
         cout << numbers[i] << " ";
@@ -75,6 +81,7 @@ int main()
     
     
     cout << " display sorted with '-' " << endl; 
+    */
     display(nums, numbers); 
    
     return 0;
@@ -194,7 +201,7 @@ void display(int x, int fill[])
             j++;
             
         }
-        if((j-1-i) > 1)
+        if((j-1-i) > 0)
         {
             cout << fill[i] << "-" << fill[j-1] << " "; 
             i = j ; 
